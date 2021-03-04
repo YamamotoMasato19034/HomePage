@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif"
+}
+
+
+img{
+    vertical-align: middle;
+}
+
+/* 大まかな配置の設定
+-------------------------------------------------------------------*/
+body{
+    width: 100%;
+    color: #333333;
+    font-size: 75%;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+    background-color: grey;
+    background-image: url(images/bg.gif);
+    background-repeat: repeat;
+}
+@media only screen and (min-width:801px){
+    body{
+        width: 1250px;
+        padding: 0px 15px;
+        margin: 0 auto;
+    }
+}
+
+#wrapper{
+    background-color: white;
+    border-right: solid 1px yellow;
+    border-left: solid 1px yellow;
+}
+
+header{
+    width: 100%;
+}
+header nav ul:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+aside{
+    width: 100%;
+    margin: 20px 0px 10px 0px;
+    padding: 0px 10px;
+}
+@media only screen and (min-width:801px){
+    aside{
+        width: 470px;
+        float: left;
+        margin-left: 10px;
+    }
+}
+
+main{
+    width: 100%;
+    padding: 0px 15px;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+}
+@media only screen and (min-width:801px){
+    main{
+        width: 470px;
+        float: right;
+    }
+}
+main:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+footer{
+    clear: both;
+    background-color: black;
+    text-align: center;
+}
+
+/* headerの設定 
+---------------------------------------------------------------*/
+#nHome header #header-image{
+    /*height: 100px;*/
+    /*background-image: url(images/header.png);*/
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    /*border: 2px solid grey;*/
+    text-align: left;
+}
+/*@media only screen and (min-width:801px){
+    #nHome header #header-image{
+        height: 305px;
+    }
+}*/
+
+header nav{
+    margin: 0px 0px 0px;  /* 上:0px 左右:80px 下:0px */
+    background-color: purple;
+}
+
+header nav ul{
+    /* ↓ li要素を中央揃え ↓ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ↑ ここまで ↑ */
+    justify-content: space-around;
+    top: 300px;
+    left: 0px;
+}
+
+header li{
+    list-style-type: none;
+    /*float: left;*/
+    padding: 8px 13px 8px 18px;
+}
+
+header li a{
+    /*width: 125px;*/
+    /*height: 50px;*/
+    display: block;
+    /*border: solid 1px black;
+    border-radius: 10px;*/
+    /*line-height: 25px;*/
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration-line: none;
+    padding: 5px;
+}
+/*@media only screen and (min-width:801px){
+    header li a{
+        width: 190px;
+        height: 100px;
+        border-radius: 20px;
+        line-height: 50px;
+        font-size: 25px;
+        margin: 0px;
+    }
+}*/
+
+header li a.middle_red{
+    /*padding-top: 10px;*/
+    /*background-color: red;*/
+    border-left: 3px solid red;
+}
+header li a.middle_blue{
+    /*padding-top: 10px;*/
+    /*background-color: blue;*/
+    border-left: 3px solid blue;
+}
+/*@media only screen and (min-width:801px){
+    header li a.middle_red, header li a.middle_blue{
+        padding-top: 0px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}*/
+
+header li a.yellow{
+    /*background-color: gold;*/
+    border-left: 3px solid yellow;
+}
+
+header li a.green{
+    /*background-color: green;*/
+    border-left: 3px solid green;
+}
+
+/*header li a:hover{
+    opacity: .5;
+}*/
+
+
+/* asideの設定
+---------------------------------------------------------*/
+aside h2{
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 5px solid red;
+    padding-left: 15px;
+}
+@media only screen and (min-width:801px){
+    aside h2{
+        font-size: 30px;
+        margin: 20px 0px;
+    }
+}
+
+aside #sns-box h3.sub-title{
+    margin-top: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+aside #sns-box p{
+    font-size: 20px;
+    text-align: center;
+}
+
+aside h2 a:link{
+    text-decoration: none;
+    color: black;
+}
+
+aside h2 a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+aside h2 a:hover{
+    text-decoration: underline;
+    color: grey;
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+/* mainの設定
+-------------------------------------------------------------*/
+main p{
+    font-size: 14px;
+}
+
+h2 span{
+    font-size: 30px;
+}
+
+main p.timer{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+main p.timer #day,#hour,#min,#sec{
+    font-size: 30px;
+    color: aqua;
+}
+
+@media only screen and (max-width:376px)
+{
+    main img{
+        width: 300px;
+        height: 590px;
+    }
+}
+
+
+/* footerの設定
+--------------------------------------------------------------*/
+footer p{
+    color: white;
+    font-size: 20px;
+}
+
+footer a#question{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li{
+    display: inline;
+    padding: 5px;
+}
+
+footer a i.my-blue{
+    color: #1da1f2;
+}
+footer a i.my-youtube{
+    color: #ff0000;
+} 
+footer a i:hover{
+    opacity: .6;
+}
+
+footer p a#question:hover{
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+footer:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+
+
+
+
+
+
