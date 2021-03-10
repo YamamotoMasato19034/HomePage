@@ -149,12 +149,12 @@ header li a{
     }
 }*/
 
-header li a.middle_red{
+header li a.red{
     /*padding-top: 10px;*/
     /*background-color: red;*/
     border-left: 3px solid red;
 }
-header li a.middle_blue{
+header li a.blue{
     /*padding-top: 10px;*/
     /*background-color: blue;*/
     border-left: 3px solid blue;
