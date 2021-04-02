@@ -83,7 +83,6 @@ main:after{
 footer{
     clear: both;
     background-color: black;
-    text-align: center;
 }
 
 /* headerの設定 
@@ -121,7 +120,7 @@ header nav ul{
 
 header li{
     list-style-type: none;
-    /*float: left;*/
+    float: left;
     padding: 8px 13px 8px 18px;
 }
 
@@ -192,10 +191,30 @@ header li a:hover{
 
 /* asideの設定
 ---------------------------------------------------------*/
+aside h2{
+    background-color: rgb(168, 243, 187);
+    border-bottom: 5px solid green;
+    margin: 7px 0px 15px 0px;
+}
 
+aside a{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+aside a:link{
+    color: black;
+    text-decoration-line: none;
+}
+aside a:hover{
+    color: green;
+}
 
 /* mainの設定
 -------------------------------------------------------------*/
 
 /* footerの設定
 --------------------------------------------------------------*/
+footer p{
+    color: white;
+}
