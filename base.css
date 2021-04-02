@@ -177,6 +177,14 @@ header li a.green{
     border-left: 3px solid green;
 }
 
+header li a:link{
+    color: white;
+}
+header li a:hover{
+    background-color: rgb(204, 169, 204);
+    color: black;
+}
+
 /*header li a:hover{
     opacity: .5;
 }*/
