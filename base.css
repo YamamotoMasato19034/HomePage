@@ -87,7 +87,7 @@ footer{
 
 /* headerの設定 
 ---------------------------------------------------------------*/
-#nHome header #header-image{
+header #header-image{
     /*height: 100px;*/
     /*background-image: url(images/header.png);*/
     background-size: cover;
