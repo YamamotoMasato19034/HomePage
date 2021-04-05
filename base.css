@@ -215,6 +215,27 @@ aside a:hover{
 
 /* footerの設定
 --------------------------------------------------------------*/
-footer p{
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+footer ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+footer ul a{
     color: white;
+    font-size: 20px;
+}
+footer ul a:link{
+    color:white;
+    text-decoration-line: none;
+}
+footer ul a:hover{
+    color: grey;
 }
